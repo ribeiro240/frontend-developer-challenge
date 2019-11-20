@@ -1,0 +1,104 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+/************ HEADER *************/
+.header {
+  width: 100%;
+  max-width: 100%;
+  height: 319.33px;
+  background: #707070;
+  color: #fff;
+
+  .header-content {
+    max-width: 923px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    .header-text {
+      font-family: 'Helvetica Neue', sans-serif;
+      text-align: center;
+      margin-bottom: 50px;
+
+      .header-text-top {
+        margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .header-text-middle {
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 24px;
+      }
+
+      .header-text-bottom {
+        font-size: 14px;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      .nav-item {
+        width: 140px;
+        height: 40px;
+        background: #fff;
+        border-radius: 4px;
+        color: #888;
+        font-size: 14px;
+        border: none;
+        margin-right: 40px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+/************ MAIN CONTENT *************/
+
+.main {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.product-gallery {
+  max-width: 923px;
+}
+
+/************ FOOTER *************/
+
+.footer {
+  width: 100%;
+  height: 186.64px;
+  background: #707070;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  .footer-text {
+    p {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 12px;
+      margin: 10px;
+    }
+  }
+}

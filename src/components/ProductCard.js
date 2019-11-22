@@ -9,8 +9,8 @@ const ProductCard = ({ id, name, image, description, oldPrice, price, installmen
       <div className="product-info">
         <p className="product-name">{name}</p>
         <p className="product-description">{description}</p>
-        <p className="from-price">De:{oldPrice}</p>
-        <p className="price">Por: {price}</p>
+        <p className="from-price">De:R${oldPrice},00</p>
+        <p className="price">Por: R${price},00</p>
         {/* <p className="installments">{installments}</p> */}
         <button className="buy-button">Comprar</button>
       </div>

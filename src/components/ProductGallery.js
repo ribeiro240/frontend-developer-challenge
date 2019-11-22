@@ -1,30 +1,22 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const ProductGallery = () => {
+
+const ProductGallery = ({ data }) => {
+
+  const renderProducts = data.map((product) => {
+    const { name, image, description, oldPrice, price, installments } = product;
+    return <ProductCard name={name} image={image} description={description} oldPrice={oldPrice} price={price} installments={installments} />
+  });
+
   return (
     <React.Fragment>
-      <h3 className="gallery-heading"> Sua seleção especial </h3>
+
       <div className="product-gallery">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {renderProducts}
       </div>
     </React.Fragment>
-  );
+  )
 }
 
 export default ProductGallery;

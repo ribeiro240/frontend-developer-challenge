@@ -1,19 +1,18 @@
 import React from 'react';
 import './ProductCard.scss';
-import maca from './maca.jpeg';
 
-const ProductCard = (props) => {
+const ProductCard = ({ id, name, image, oldPrice, price, installments }) => {
   return (
     <div className="card-container">
       <div className="product-image">
-        <img src={maca} />
+        <img src="{image} " />
       </div>
       <div className="product-info">
-        <p className="product-name">Nome do produto</p>
-        <p className="product-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata</p>
-        <p className="from-price">De: preço</p>
-        <p className="price">Por: preço</p>
-        <p className="installments">parcelamento</p>
+        <p className="product-name">oahsd</p>
+        <p className="product-description">IAHd</p>
+        <p className="from-price">De:IAdoi</p>
+        <p className="price">Por: iASdoi</p>
+        <p className="installments">HAOdihAS</p>
         <button className="buy-button">Comprar</button>
       </div>
     </div>

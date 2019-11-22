@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
-import ProductCard from './components/ProductCard/ProductCard';
+import ProductGallery from './components/ProductGallery/ProductGallery';
+
 
 function App() {
 	return (
@@ -23,12 +24,7 @@ function App() {
 			</header>
 			<main className="main">
 				<section className="special-selection" >
-					<h3 className="gallery-heading"> Sua seleção especial </h3>
-					<div className="product-gallery">
-						<ProductCard />
-						<ProductCard />
-						<ProductCard />
-					</div>
+					<ProductGallery />
 					<button className="more-products">Ainda mais produtos aqui!</button>
 				</section>
 				<form className="share-form">

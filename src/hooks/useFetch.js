@@ -12,7 +12,7 @@ const useFetch = (initialUrl) => {
     if (!url) return
 
     setIsLoading(true);
-    setData(null);
+
     setError(null);
 
     fetch(url)

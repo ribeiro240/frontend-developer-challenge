@@ -1,68 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Setup
+  - This project was bootstrapped with Create-React-App, since it was simple project and it didn't need any specific configurations, then saving development time.
+  - According to Create-React-App's github repository, it includes the following:
 
-## Available Scripts
+    - React, JSX, ES6, TypeScript and Flow syntax support.
+    - Language extras beyond ES6 like the object spread operator.
+    - Autoprefixed CSS, so you don’t need -webkit- or other prefixes.
+    - A fast interactive unit test runner with built-in support for coverage reporting.
+    - A live development server that warns about common mistakes.
+    - A build script to bundle JS, CSS, and images for production, with hashes and sourcemaps.
+    - An offline-first service worker and a web app manifest, meeting all the Progressive Web App criteria. (Note: Using the service worker is opt-in as of react-scripts@2.0.0 and higher)
+    - Hassle-free updates for the above tools with a single dependency.  
+    - Since the version 2.0, it supports Sass and it only needs a "npm install node-sass --save", in the terminal, and nothing else.  
 
-In the project directory, you can run:
+2. Layout Width
+  - Although the mock has a maximum width of 1500 px, it was developed for full desktop width and it's completely responsive, to allow maximum user reach. 
+  - The responsiveness is validated until 320px wide screen, without breaking. Below that, it might break.
 
-### `npm start`
+3. Tools
+  - Along the already mentioned Create-React-App, Sass was also used for the styling.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+4. Folder Structure
+  - Folders were structure according to its contents. Custom hooks are inside the "hooks" folder, components are inside the "components" folder.
+  - The App.js and App.scss are in the src folder for logical reasons, since they are the main files in the project.

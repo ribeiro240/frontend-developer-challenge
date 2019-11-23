@@ -1,3 +1,5 @@
+# Desafio | Frontend Developer | Filipe Ribeiro Paiva
+
 1. Setup
   - This project was bootstrapped with Create-React-App, since it was simple project and it didn't need any specific configurations, then saving development time.
   - According to Create-React-App's github repository, it includes the following:
@@ -22,3 +24,12 @@
 4. Folder Structure
   - Folders were structure according to its contents. Custom hooks are inside the "hooks" folder, components are inside the "components" folder.
   - The App.js and App.scss are in the src folder for logical reasons, since they are the main files in the project.
+
+5. Running this project locally
+  - To run this project locally, follow these instructions:
+    - Clone it from its github repository.
+    - Go into its folder, in the terminal.
+    - If you don't have Node installed, install it first (run "node -v" to check it).
+    - In the project folder, run "npm install" and then "npm start".
+    - A browser tab will open up with the app running on a development server created by Create-React-App.
+

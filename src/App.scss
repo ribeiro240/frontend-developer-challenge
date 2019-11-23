@@ -1,7 +1,9 @@
+/******MEDIA QUERY VARIABLES*****/
 $tablet: 1024px;
 $mobile : 768px;
 $xmobile: 480px;
 
+/******STYLE RESET******/
 body {
   margin: 0;
   padding: 0;
@@ -37,8 +39,7 @@ body {
 
       @media (max-width: $xmobile) {
         padding: 20px 10px 0;
-        margin-bottom: 30px;
-        
+        margin-bottom: 30px;        
       }
 
       .header-text-top {
@@ -52,11 +53,16 @@ body {
         font-weight: 700;
         font-size: 40px;
         margin-bottom: 24px;
+        @media (max-width: $mobile) {
+          font-size: 35px;
+        }
       }
 
       .header-text-bottom {
         font-size: 14px;
-        
+        @media (max-width: $mobile) {
+          padding: 0 10px;
+        }
       }
     }
 
@@ -74,11 +80,16 @@ body {
         width: 140px;
         height: 40px;
         background: #fff;
-        border-radius: 4px;
-        color: #888;
-        font-size: 12px;
+        border-radius: 4px;        
         border: none;
         margin-right: 40px;
+
+        a {
+          text-decoration: none;
+          color: #888;
+          font-size: 12px;
+          font-family: 'Roboto', sans-serif;
+        }
         &:last-child {
           margin-right: 0;
         }
@@ -108,6 +119,10 @@ body {
   margin-bottom: 164px;
 }
 
+.error-message {
+  color: #707070;
+}
+/****Product Gallery****/
 .gallery-heading {
   text-align: center;
   font-size: 18px;
@@ -145,6 +160,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 
+/*****Product Card*****/  
 .card-container {
   width: 200px;
   height: 364px;
@@ -183,6 +199,7 @@ body {
 }
 }
 
+/************SHARE FORM*************/
 .share-form {
   max-width: 923px;
   margin: 0 auto;

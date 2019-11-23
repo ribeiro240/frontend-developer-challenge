@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = () => {
   return (
-    <form className="share-form">
+    <form className="share-form" id="form">
       <h3 className="form-heading">Compartilhe a novidade</h3>
       <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
       <div className="user-info">

@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import ProductCard from './ProductCard';
+import React from 'react';
 
 
 const ProductGallery = ({ products }) => {
 
   return (
     <React.Fragment>
-
       <div className="product-gallery">
         {products}
       </div>

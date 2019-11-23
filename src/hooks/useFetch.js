@@ -12,7 +12,6 @@ const useFetch = (initialUrl) => {
     if (!url) return
 
     setIsLoading(true);
-
     setError(null);
 
     fetch(url)
@@ -23,7 +22,7 @@ const useFetch = (initialUrl) => {
           setError(data.message)
           return;
         }
-        setData(data.products)
+        setData(data.products) //returns only the products array from data
       })
       .catch(error => {
         setIsLoading(false);
